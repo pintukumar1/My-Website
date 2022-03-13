@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
 const profileSchema = new Schema ({
-    user: {
+    user : {
         type: Schema.Types.ObjectId,
         ref: 'users'
     },
@@ -37,24 +37,24 @@ const profileSchema = new Schema ({
     experience: [ 
     {
         title : {
-            type: String,
+            type: String ,
             required: true
         },
-        company: {
+        company : {
             type: String
         },
         location: {
             type: String
         },
         from: {
-            type: Date,
+            type: Date ,
             required: true
         },
         to : {
             type: Date
         },
         current: {
-            type: Boolean,
+            type: Boolean ,
             default: false
         },
         description: {
@@ -64,7 +64,7 @@ const profileSchema = new Schema ({
     ],
     education: [ 
         {
-            School : {
+            school : {
                 type: String,
                 required: true
             },
