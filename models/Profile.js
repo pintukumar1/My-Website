@@ -3,12 +3,12 @@ const Schema = mongoose.Schema;
 
 const profileSchema = new Schema ({
     user : {
-        type: Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId ,
         ref: 'users'
     },
     handle : {
-        type: String,
-        required: true,
+        type: String ,
+        required: true ,
         max: 40  
     },
     company : {
@@ -21,11 +21,11 @@ const profileSchema = new Schema ({
         type: String
     },
     status: {
-        type: String,
+        type: String ,
         required: true
     },
     skills : {
-        type: [String],
+        type: [String] ,
         required: true
     },
     bio : {
@@ -61,29 +61,29 @@ const profileSchema = new Schema ({
             type: String
         }
       }
-    ],
+    ] ,
     education: [ 
         {
-            school : {
-                type: String,
+            college : {
+                type: String ,
                 required: true
             },
             degree: {
                 type: String
             },
             fieldofstudy: {
-                type: String,
+                type: String ,
                 required: true
             },
             from: {
-                type: Date,
+                type: Date ,
                 required: true
             },
             to : {
                 type: Date
             },
             current: {
-                type: Boolean,
+                type: Boolean ,
                 default: false
             },
             description: {

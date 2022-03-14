@@ -11,10 +11,6 @@ const router = express.Router()
 //Load Input Validation
 const validateRegisterInput = require('../../validation/register')
 const validateLoginInput = require('../../validation/login')
-// route api/users/test
-router.get('/test', (req, res) => {
-    res.json({msg: 'users works'});
-})
 
 router.post('/register', (req, res) => {
     const { errors, isValid } = validateRegisterInput(req.body);
@@ -51,7 +47,6 @@ router.post('/register', (req, res) => {
                 })
             })
         }
-
     })
 })
 
@@ -89,13 +84,12 @@ router.post('/login', (req, res) => {
                         token: "Bearer " + token
                     })
             })
-        } 
-            else {
+        } else {
                 errors.password = "Password incorrect"
-            return res.status(400).json(errors)
+                return res.status(400).json(errors)
         }
-    })
-})
+      })
+   })
 })
 
 router.get('/current' , passport.authenticate('jwt', {session: false}), (req, res) => {
