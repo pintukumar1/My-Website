@@ -3,6 +3,7 @@ const isEmpty = require('./is-empty');
 
 module.exports = function validatePostHandler(data) {
     let errors = {}
+
     data.text = !isEmpty(data.text) ? data.text : ""
 
     if(Validator.isEmpty(data.text)) {
@@ -10,7 +11,7 @@ module.exports = function validatePostHandler(data) {
     }
 
     return {
-        errors: errors,
+        errors: errors ,
         isValid: isEmpty(errors)
     }
 }

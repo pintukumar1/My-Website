@@ -27,15 +27,15 @@ const postSchema = new Schema({
     comments: [
         {
             user: {
-                type: Schema.Types.ObjectId,
+                type: Schema.Types.ObjectId ,
                 ref: 'users'
             },
             text: {
-                type: String,
+                type: String ,
                 required: true
             },
             name: {
-                type: String,
+                type: String 
             }, 
             avatar: {
                 type: String
