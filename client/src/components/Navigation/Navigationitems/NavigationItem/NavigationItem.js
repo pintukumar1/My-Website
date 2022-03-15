@@ -1,11 +1,11 @@
 import React from 'react'
+import classes from './NavigationItem.module.css'
 
-function NavigationItem() {
+const NavigationItem = (props) => {
     return (
         <li className={classes.NavigationItem}>
-            <a link="/" >{props.children}</a>
+            <a link={props.link} href="#" >{props.children}</a>
         </li>
-        
     )
 }
 
