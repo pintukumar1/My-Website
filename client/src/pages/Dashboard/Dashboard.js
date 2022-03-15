@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Toolbar from '../Navigation/Toolbar/Toolbar'
-import Landing from '../Landing/Landing'
-import Footer from '../Dashboard/Footer/Footer'
+import Toolbar from '../../components/Toolbar/Toolbar'
+import Landing from '../../components/Landing/Landing'
+import Footer from '../../components/Footer/Footer'
 
-class Layout extends Component {
+class Dashboard extends Component {
     render() {
         return (
             <React.Fragment>
@@ -15,4 +15,4 @@ class Layout extends Component {
     }
 }
 
-export default Layout 
+export default Dashboard

@@ -1,5 +1,5 @@
 import React from 'react'
-import NavigationItems from '../Navigationitems/NavigationItems'
+import NavigationItems from '../NavigationItems/NavigationItems'
 
 import classes from './Toolbar.module.css'
 

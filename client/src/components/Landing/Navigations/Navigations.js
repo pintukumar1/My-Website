@@ -1,5 +1,5 @@
 import React from 'react'
-import NavigationItem from '../../Navigation/Navigationitems/NavigationItem/NavigationItem'
+import NavigationItem from '../../NavigationItems/NavigationItem/NavigationItem'
 
 import classes from './Navigations.module.css'
 
