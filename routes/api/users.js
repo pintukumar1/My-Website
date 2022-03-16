@@ -11,7 +11,8 @@ const router = express.Router()
 //Load Input Validation
 const validateRegisterInput = require('../../validation/register')
 const validateLoginInput = require('../../validation/login')
-
+ 
+// POST api/users/register
 router.post('/register', (req, res) => {
     const { errors, isValid } = validateRegisterInput(req.body);
     // check validation 
@@ -50,6 +51,8 @@ router.post('/register', (req, res) => {
     })
 })
 
+
+// POST api/users/login
 
 router.post('/login', (req, res) => {
     const { errors, isValid } = validateLoginInput(req.body);

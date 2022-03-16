@@ -1,18 +1,19 @@
-import React, { Component } from 'react'
-import Toolbar from '../../components/Toolbar/Toolbar'
-import Landing from '../../components/Landing/Landing'
+import React from 'react'
 import Footer from '../../components/Footer/Footer'
+import Toolbar from '../../components/Toolbar/Toolbar'
+import classes from './Dashboard.module.css'
 
-class Dashboard extends Component {
-    render() {
-        return (
-            <React.Fragment>
-                <Toolbar />
-                <Landing />
-                <Footer />
-            </React.Fragment>
-        )
-    }
+function Dashboard(props) {
+    return (
+        <div>
+            <Toolbar />
+             <main className={classes.Content}>
+                 {props.children}
+             </main>   
+             <Footer /> 
+        </div>
+    )
 }
+
 
 export default Dashboard

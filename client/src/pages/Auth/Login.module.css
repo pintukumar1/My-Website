@@ -1,0 +1,30 @@
+.Login {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+
+.Login div {
+    margin: 10px;
+    display: flex;
+    flex-flow: column;
+}
+
+
+.Login button {
+    color: black;
+    background-color: grey;
+    height: 32px;
+    width: 20%;
+    border-color: black;
+    font-size: 16px;
+}
+
+.Login button:hover {
+   color: white;
+   background-color: black;
+}
+
+.Login input {
+    height: 20px;
+}

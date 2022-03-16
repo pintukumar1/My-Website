@@ -16,8 +16,7 @@
 }
 
 .NavigationItem a:hover,
-.NavigationItem a:active,
-.NavigationItem a.active {
+.NavigationItem a:active{
     color: #343A40;
     background-color: white;
 }

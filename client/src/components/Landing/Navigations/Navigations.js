@@ -6,8 +6,8 @@ import classes from './Navigations.module.css'
 function Navigations() {
     return (
        <ul className={classes.Navigations}>
-           <NavigationItem link="/" >Sign Up</NavigationItem>
-           <NavigationItem link="/">Login</NavigationItem>
+           <NavigationItem link="/register" >Sign Up</NavigationItem>
+           <NavigationItem link="/login">Login</NavigationItem>
        </ul>
     )
 }
