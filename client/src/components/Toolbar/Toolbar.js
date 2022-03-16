@@ -6,7 +6,7 @@ import classes from './Toolbar.module.css'
 function Toolbar() {
     return (
         <div className={classes.Toolbar}>
-            <h1>DevConnector</h1>
+            <h1 style={{color:"whitesmoke"}}>DevConnector</h1>
             <NavigationItems />
         </div>    
     )
